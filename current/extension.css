@@ -1,0 +1,15 @@
+body{background: #f4f4f4; font-family: Calibri,arial; font-size: 14px; margin:0;}
+#status {white-space: pre; text-overflow: ellipsis; overflow: hidden; max-width: 400px; display:none;}
+#__status{display:none;}
+#sh_list{margin: auto; width: 95%; font-size: 125%;}
+#sh_list .row_list{border-top: solid 1px #e3e3e3; border-radius: 2px; padding: 10px 15px; position: relative; color: #666; background: #fff; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.26);}
+#sh_list .row_list + .row_list{margin-top:10px;}
+.formated-block{color: #fff; margin: 0;width: 400px; float:left;}
+.fliter_input {padding: 10px 15px; text-align: center;}
+.fliter_input input{padding: 10px 10px; width: 95%; margin: auto; border-radius: 5px; background: #fff; box-shadow: 2px 2px 3px #ddd; border: solid 1px #eee;}
+._fbshare{width: 360px; text-decoration:none; color:#c33;}
+._fbshare:hover{color:#e41e26}
+.img_sh{float:left; width:150px; height:150px; margin-right:10px;}
+.footer_button{position: fixed; width: 100%; bottom: 0; background: #ddd; text-align: center; padding: 3px 10px; left: 0;}
+
+.heading{background:#ed6f70; color:#fff;padding: 10px 15px; margin: 0;}

@@ -1,0 +1,35 @@
+{
+   "applications": {
+      "gecko": {
+         "id": "8AF6A602-B32F-11E7-B9E3-23ED848F2EE7",
+         "strict_min_version": "42.0"
+      }
+   },
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/icon32.png",
+      "default_popup": "popup.html",
+      "default_title": "Share Product on Social Media"
+   },
+   "content_scripts": [ {
+      "js": [ "popup.js" ],
+      "matches": [ "*://www.amazon.com/*", "*://smile.amazon.com/*", "*://www.amazon.ca/*", "*://www.amazon.co.uk/*", "*://www.amazon.de/*", "*://www.amazon.es/*", "*://www.amazon.fr/*", "*://www.amazon.it/*", "*://www.amazon.co.jp/*", "*://www.amazon.cn/*", "*://www.amazon.in/*", "*://www.flipkart.com/*", "*://dl.flipkart.com/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self' ",
+   "description": "Share on Product in single click or schedule for future share.",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArjtb86BIrA9TUywDwAIDPQlewRlZiG1EHLxUvdCqyynp75i8EE8uAa9B898wsDsYrxa7WgGTeDytLSz7z/14vd1yYVtlknJ27QzuclZj3ctKwssgwmtfMoSOMFYdkOJRAlbl+7lRxkYSSnc/KsZc5WIqmA2f04ZHG3iV34XVe+QxdG8lY1VPjN2qXvBE/psM4M6oXqaIzMuL2c8pybdDd6fUSRxwAh78g/8IuXJYcaN+fdVZiTZ+oeQM+a3dSHUDVjUPEYCbKZuRM05tPGSa0Btj7qkk/GrMkDktRNrZ764FXgGMr1MrPZQ5rF5bnUgUNgbnr/Ulp/cjDJYUvT4rOwIDAQAB",
+   "manifest_version": 2,
+   "name": "Enhance product Visibility",
+   "permissions": [ "activeTab", "tabs", "storage", "https://www.googleapis.com/urlshortener/", "webRequest", "webRequestBlocking", "http://www.amazon.com/*", "https://www.amazon.com/*", "http://smile.amazon.com/*", "https://smile.amazon.com/*", "http://www.amazon.ca/*", "https://www.amazon.ca/*", "http://www.amazon.co.uk/*", "https://www.amazon.co.uk/*", "http://www.amazon.de/*", "https://www.amazon.de/*", "http://www.amazon.es/*", "https://www.amazon.es/*", "http://www.amazon.fr/*", "https://www.amazon.fr/*", "http://www.amazon.it/*", "https://www.amazon.it/*", "http://www.amazon.co.jp/*", "https://www.amazon.co.jp/*", "http://www.amazon.cn/*", "https://www.amazon.cn/*", "http://www.amazon.in/*", "https://www.amazon.in/*", "http://www.flipkart.com/*", "https://www.flipkart.com/*", "http://dl.flipkart.com/*", "https://dl.flipkart.com/*", "http://jsonip.com/*", "http://*/", "https://*/", "https://www.jabong.com/*", "http://www.jabong.com/*", "contextMenus" ],
+   "short_name": "besocial",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.6"
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<em:name>Enhance product Visibility</em:name>
+  <Description about="urn:mozilla:install-manifest">
+   Share on Product in single click or schedule for future share.
+  </Description>
+  <em:id>8AF6A602-B32F-11E7-B9E3-23ED848F2EE7</em:id>
+</RDF>
